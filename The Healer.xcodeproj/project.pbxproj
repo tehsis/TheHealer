@@ -12,6 +12,9 @@
 		22A12A01220F1B6D0021AB38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A129FF220F1B6D0021AB38 /* Main.storyboard */; };
 		22A12A03220F1B6F0021AB38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A12A02220F1B6F0021AB38 /* Assets.xcassets */; };
 		22A12A06220F1B6F0021AB38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A12A04220F1B6F0021AB38 /* LaunchScreen.storyboard */; };
+		22A12A0E220F1B8B0021AB38 /* Healer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A12A0D220F1B8B0021AB38 /* Healer.swift */; };
+		22A12A10220F1C9D0021AB38 /* Villager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A12A0F220F1C9D0021AB38 /* Villager.swift */; };
+		22A12A12220F53C10021AB38 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A12A11220F53C10021AB38 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		22A12A02220F1B6F0021AB38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A12A05220F1B6F0021AB38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A12A07220F1B6F0021AB38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A12A0D220F1B8B0021AB38 /* Healer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healer.swift; sourceTree = "<group>"; };
+		22A12A0F220F1C9D0021AB38 /* Villager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Villager.swift; sourceTree = "<group>"; };
+		22A12A11220F53C10021AB38 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		22A129FA220F1B6D0021AB38 /* The Healer */ = {
 			isa = PBXGroup;
 			children = (
+				22A12A11220F53C10021AB38 /* Game.swift */,
+				22A12A0F220F1C9D0021AB38 /* Villager.swift */,
 				22A129FB220F1B6D0021AB38 /* AppDelegate.swift */,
 				22A129FD220F1B6D0021AB38 /* ViewController.swift */,
 				22A129FF220F1B6D0021AB38 /* Main.storyboard */,
 				22A12A02220F1B6F0021AB38 /* Assets.xcassets */,
 				22A12A04220F1B6F0021AB38 /* LaunchScreen.storyboard */,
 				22A12A07220F1B6F0021AB38 /* Info.plist */,
+				22A12A0D220F1B8B0021AB38 /* Healer.swift */,
 			);
 			path = "The Healer";
 			sourceTree = "<group>";
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A129FE220F1B6D0021AB38 /* ViewController.swift in Sources */,
+				22A12A12220F53C10021AB38 /* Game.swift in Sources */,
 				22A129FC220F1B6D0021AB38 /* AppDelegate.swift in Sources */,
+				22A12A0E220F1B8B0021AB38 /* Healer.swift in Sources */,
+				22A12A10220F1C9D0021AB38 /* Villager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

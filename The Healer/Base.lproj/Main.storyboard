@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,262 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Healer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-eK-WGy">
+                                <rect key="frame" x="16" y="20" width="343" height="560"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KHQ-fP-1CW">
+                                        <rect key="frame" x="20.5" y="0.0" width="302.5" height="139.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ft3-8E-ecE">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="139.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ft3-8E-ecE" secondAttribute="height" multiplier="1:2" id="0HG-av-H1y"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbm-rC-kNH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmQ-nB-pb9">
+                                                <rect key="frame" x="77.5" y="0.0" width="69.5" height="139.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="CmQ-nB-pb9" secondAttribute="height" multiplier="1:2" id="aph-tC-2Rv"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OlD-8X-kf4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxV-yl-AKy">
+                                                <rect key="frame" x="155" y="0.0" width="69.5" height="139.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zxV-yl-AKy" secondAttribute="height" multiplier="1:2" id="klh-Rl-2CD"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v3O-fh-Sid"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FG-7p-cAF">
+                                                <rect key="frame" x="232.5" y="0.0" width="70" height="139.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0FG-7p-cAF" secondAttribute="height" multiplier="1:2" id="8o6-mv-VpT"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Woq-gw-Zv5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ECL-FR-cRa">
+                                        <rect key="frame" x="20.5" y="140.5" width="302.5" height="139"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7L-0r-uOH">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="139"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="E7L-0r-uOH" secondAttribute="height" multiplier="1:2" id="AwA-hp-ECM"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Agx-Bl-c6o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJi-hc-U0U">
+                                                <rect key="frame" x="77.5" y="0.0" width="69.5" height="139"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="OJi-hc-U0U" secondAttribute="height" multiplier="1:2" id="E4m-Lg-oMG"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nob-wp-wgD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANw-cq-fuL">
+                                                <rect key="frame" x="155" y="0.0" width="69.5" height="139"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ANw-cq-fuL" secondAttribute="height" multiplier="1:2" id="NFN-aE-G55"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5v6-R4-7S6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEy-MS-Gr0">
+                                                <rect key="frame" x="232.5" y="0.0" width="70" height="139"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yEy-MS-Gr0" secondAttribute="height" multiplier="1:2" id="LpC-CG-aAx"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E84-Ue-5bv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="VmN-uY-IlZ"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xiw-Qo-ueG">
+                                        <rect key="frame" x="20.5" y="280.5" width="302.5" height="139.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mm-8j-UEI">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="139.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0mm-8j-UEI" secondAttribute="height" multiplier="1:2" id="MpN-HT-4hh"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S5o-OC-qsR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXX-Rz-tZf">
+                                                <rect key="frame" x="77.5" y="0.0" width="69.5" height="139.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="PXX-Rz-tZf" secondAttribute="height" multiplier="1:2" id="56t-F3-XOk"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kd7-C6-8tR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdX-HP-xbH">
+                                                <rect key="frame" x="155" y="0.0" width="69.5" height="139.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="WdX-HP-xbH" secondAttribute="height" multiplier="1:2" id="5wi-GN-gFA"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ghb-GC-E1T"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8q-Py-cbf">
+                                                <rect key="frame" x="232.5" y="0.0" width="70" height="139.5"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="v8q-Py-cbf" secondAttribute="height" multiplier="1:2" id="ZK0-7c-LIz"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xlq-No-yN2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="JZp-V6-bup"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="76j-A6-Izq">
+                                        <rect key="frame" x="20.5" y="421" width="302.5" height="139"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmF-zA-5HD">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="139"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zmF-zA-5HD" secondAttribute="height" multiplier="1:2" id="alk-eJ-I2b"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BxJ-pJ-hsv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s23-6m-gjr">
+                                                <rect key="frame" x="77.5" y="0.0" width="69.5" height="139"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="s23-6m-gjr" secondAttribute="height" multiplier="1:2" id="9n2-g4-qLa"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZeJ-uf-f97"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlA-Mf-L7a">
+                                                <rect key="frame" x="155" y="0.0" width="69.5" height="139"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SlA-Mf-L7a" secondAttribute="height" multiplier="1:2" id="rvF-sj-ten"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiZ-77-Gbr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7S-ic-vTk">
+                                                <rect key="frame" x="232.5" y="0.0" width="70" height="139"/>
+                                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="u7S-ic-vTk" secondAttribute="height" multiplier="1:2" id="xJ5-Zh-RoH"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="onVillagerSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jv6-Fy-TQQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="e9g-RJ-oeU"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-cT-Eva">
+                                <rect key="frame" x="142" y="600" width="91" height="47"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Fxm-5Z-4Dv"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sleep"/>
+                                <connections>
+                                    <action selector="onSleepTouched" destination="BYZ-38-t0r" eventType="touchUpInside" id="V4c-CW-oIv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hdT-cT-Eva" firstAttribute="top" secondItem="QeR-eK-WGy" secondAttribute="bottom" constant="20" id="6Zf-FI-hIM"/>
+                            <constraint firstItem="QeR-eK-WGy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7X8-Ki-HDc"/>
+                            <constraint firstItem="QeR-eK-WGy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AQv-Ja-0r8"/>
+                            <constraint firstAttribute="bottom" secondItem="hdT-cT-Eva" secondAttribute="bottom" constant="20" symbolic="YES" id="L4b-qL-VQ3"/>
+                            <constraint firstItem="hdT-cT-Eva" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="Ps0-OO-dwA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QeR-eK-WGy" secondAttribute="trailing" constant="16" id="eWd-dh-Zqh"/>
+                            <constraint firstItem="hdT-cT-Eva" firstAttribute="centerX" secondItem="QeR-eK-WGy" secondAttribute="centerX" id="r1c-1Z-N7U"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="VillagersButtons" destination="ft3-8E-ecE" collectionClass="NSMutableArray" id="nEH-Jc-bzV"/>
+                        <outletCollection property="VillagersButtons" destination="CmQ-nB-pb9" collectionClass="NSMutableArray" id="htL-x9-pjG"/>
+                        <outletCollection property="VillagersButtons" destination="zxV-yl-AKy" collectionClass="NSMutableArray" id="mZE-FV-Uby"/>
+                        <outletCollection property="VillagersButtons" destination="0FG-7p-cAF" collectionClass="NSMutableArray" id="yuq-Wj-4LO"/>
+                        <outletCollection property="VillagersButtons" destination="E7L-0r-uOH" collectionClass="NSMutableArray" id="gVi-Ua-oUE"/>
+                        <outletCollection property="VillagersButtons" destination="OJi-hc-U0U" collectionClass="NSMutableArray" id="dNu-vF-hOa"/>
+                        <outletCollection property="VillagersButtons" destination="ANw-cq-fuL" collectionClass="NSMutableArray" id="Cx2-fJ-2qo"/>
+                        <outletCollection property="VillagersButtons" destination="yEy-MS-Gr0" collectionClass="NSMutableArray" id="bYz-kA-UaO"/>
+                        <outletCollection property="VillagersButtons" destination="0mm-8j-UEI" collectionClass="NSMutableArray" id="1p7-8D-d9U"/>
+                        <outletCollection property="VillagersButtons" destination="PXX-Rz-tZf" collectionClass="NSMutableArray" id="3l8-Hb-bqc"/>
+                        <outletCollection property="VillagersButtons" destination="WdX-HP-xbH" collectionClass="NSMutableArray" id="CqM-0l-1Zd"/>
+                        <outletCollection property="VillagersButtons" destination="v8q-Py-cbf" collectionClass="NSMutableArray" id="diT-Jy-EEc"/>
+                        <outletCollection property="VillagersButtons" destination="zmF-zA-5HD" collectionClass="NSMutableArray" id="2ZQ-Mj-Aof"/>
+                        <outletCollection property="VillagersButtons" destination="s23-6m-gjr" collectionClass="NSMutableArray" id="KB0-WL-kPl"/>
+                        <outletCollection property="VillagersButtons" destination="SlA-Mf-L7a" collectionClass="NSMutableArray" id="uqX-Dd-u6A"/>
+                        <outletCollection property="VillagersButtons" destination="u7S-ic-vTk" collectionClass="NSMutableArray" id="9uU-3g-uKr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
